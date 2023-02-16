@@ -12,6 +12,9 @@ dependencies = [
     "djangorestframework",
     "pytest",
     "python-dotenv>=0.21.1",
+    "pymongo>=4.3.3",
+    "pandas>=1.5.3",
+    "elasticsearch>=8.6.1",
 ]
 requires-python = ">=3.10"
 readme = "README.md"
