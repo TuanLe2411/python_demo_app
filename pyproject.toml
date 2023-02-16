@@ -1,0 +1,26 @@
+[tool.pdm]
+
+[project]
+name = "demo_app"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "letuan", email = ""},
+]
+dependencies = [
+    "django==3.1",
+    "djangorestframework",
+    "pytest",
+    "python-dotenv>=0.21.1",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm.scripts]
+start_dev.cmd = "python3 src/main.py development"
+start_prod.cmd = "python3 src/main.py production"
